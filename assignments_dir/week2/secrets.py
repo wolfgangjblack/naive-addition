@@ -1,0 +1,5 @@
+REDDIT_API_CLIENT_ID = 'LXyVcmxVvzEIcNtazIFdRg'
+REDDIT_API_CLIENT_SECRET = 'gZWahHlUk_fURThgHU1eDxB-GhN2Tg'
+REDDIT_API_USER_AGENT = 'another_app'
+username = 'Zefaton_dev_acc'
+password = 'IamWolfgang1'
