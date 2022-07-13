@@ -36,11 +36,11 @@ How does an SSD (single shot multi box detector) object detection model work?
  - in summary: it uses multiple boxes and feature maps to detect objects of various sizes and classes in a single pass through the NN. Typically Yolo is a favorite algorithm for this
 
 ## 4) Interview Readiness the third
-What is Intersection over Union and why do we use Intersection over Union?
-    - Intersection over Union is a term used to describe the extent of overlap of two boxes. The greater the region of overlap, the greater the IOU. This is mainly used in object detection when attempting to locate objects optimally in an image. 
-    - intersection is calculated as: $I = ( min(x_{2,a}, x_{2,b}) - max(x_{1,a}, x_{1,b}) ) * ( min(y_{2,a}, y_{2,b}) - max(y_{1,a}, y_{1,b}) )$
-        - where x and y are coordinates in cartesian space, and subscripts a, b, 1, and 2 denote bounding box a, bounding box b, the first point (or min coordinate of the box) along an axis, and the second point (or max coordinate) along an axis respectively. 
-    - Union is calculated as: $U = A_{a} + A_{b} - I$
-        - where A is the area of the box and I is the previously calculated intersection
-    - Given these equations, IOU can be calculated as $IOU = \frac{I}{U}$
+What is Intersection over Union and why do we use Intersection over Union? <br>
+ - Intersection over Union is a term used to describe the extent of overlap of two boxes. The greater the region of overlap, the greater the IOU. This is mainly used in object detection when attempting to locate objects optimally in an image. <br>
+     - intersection is calculated as: $I = ( min(x_{2,a}, x_{2,b}) - max(x_{1,a}, x_{1,b}) ) * ( min(y_{2,a}, y_{2,b}) - max(y_{1,a}, y_{1,b}) )$ <br>
+        - where x and y are coordinates in cartesian space, and subscripts a, b, 1, and 2 denote bounding box a, bounding box b, the first point (or min coordinate of the box) along an axis, and the second point (or max coordinate) along an axis respectively. <br>
+ - Union is calculated as: $U = A_{a} + A_{b} - I$ <br>
+     - where A is the area of the box and I is the previously calculated intersection
+ - Given these equations, IOU can be calculated as $IOU = \frac{I}{U}$
 
